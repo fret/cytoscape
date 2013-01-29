@@ -37,6 +37,20 @@ If you want to clone all sub-projects at once, you also need:
 ```
 repo init -u git@github.com:cytoscape/cytoscape.git
 repo sync
+# Create local branches
+repo start master api impl gui-distribution support parent headless-distribution
+repo start develop master api impl gui-distribution support parent headless-distribution
+```
+
+### For Core Developer
+Before start development, you need to initialize your repo with git flow:
+
+For each sun-project, run the following command:
+```
+git flow init -d
+git checkout develop
+# You need write permission to push your code.  The following is for impl bundle:
+git remote set-url origin git@github.com:cytoscape/cytoscape-impl.git
 ```
 
 You can clone Cytoscape 3 project manually if you want.
