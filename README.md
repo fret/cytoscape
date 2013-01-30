@@ -65,19 +65,11 @@ Finally, use the following to actually clone the repositories:
 repo sync
 ```
 
-<<<<<<< HEAD
-At this point, your Then, you need to create local branches
-
-```
-repo start master api impl gui-distribution support parent headless-distribution
-repo start develop master api impl gui-distribution support parent headless-distribution
-=======
 At this point, you need to create local branches
 
 ```
 repo start master api impl gui-distribution support parent headless-distribution
 repo start develop api impl gui-distribution support parent headless-distribution
->>>>>>> 7f1d7941e6e59cf8a64028a73d3378c6d7006d79
 ```
 
 Finally, switch to the develop branch:
@@ -87,27 +79,6 @@ repo checkout develop
 ```
 
 #### For Core Developer
-<<<<<<< HEAD
-Before start development, you need to initialize your repo with git flow:
-
-For each sun-project, run the following command:
-
-```
-git flow init -d
-```
-
-You need write permission to push your code.  The following is for impl bundle:
-
-```
-git remote set-url origin git@github.com:cytoscape/cytoscape-impl.git
-```
-
-Now you can push your changes to the upstream.
-
-
-### Clone with git commands
-Of course, you can clone Cytoscape 3 subprojects manually.  First, you need to clone this top-level project to 
-=======
 Before start development, you need to initialize your repo with git-flow:
 
 For each sub-project, run the following command:
@@ -118,7 +89,6 @@ git-flow init -d
 
 ### Clone with git commands
 Of course, you can clone Cytoscape 3 subprojects manually.  First, you need to clone this top-level project:
->>>>>>> 7f1d7941e6e59cf8a64028a73d3378c6d7006d79
 
 ```
 git clone git://github.com/cytoscape/cytoscape.git
