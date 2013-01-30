@@ -62,7 +62,7 @@ At this point, you need to create local branches
 
 ```
 repo start master api impl gui-distribution support parent headless-distribution
-repo start develop master api impl gui-distribution support parent headless-distribution
+repo start develop api impl gui-distribution support parent headless-distribution
 ```
 
 Finally, switch to the develop branch:
