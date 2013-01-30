@@ -51,10 +51,19 @@ There are two ways to clone Cytoscape projects:
 
 
 ### Clone with repo
-You need to install repo before you run the following command.
+You need to install repo before you run the following commands.  To initialize a read-only clone of the projects use:
 
 ```
 repo init -u git@github.com:cytoscape/cytoscape.git
+```
+
+Core developers can initialize writable clone instead using this command:
+```
+repo init -u git@github.com:cytoscape/cytoscape.git -m dev.xml
+```
+
+Finally, use the following to actually clone the repositories:
+```
 repo sync
 ```
 
@@ -79,15 +88,6 @@ For each sub-project, run the following command:
 ```
 git-flow init -d
 ```
-
-You need write permission to push your code.  The following is for impl bundle:
-
-```
-git remote set-url origin git@github.com:cytoscape/cytoscape-impl.git
-```
-
-Now you can push your changes upstream.
-
 
 ### Clone with git commands
 Of course, you can clone Cytoscape 3 subprojects manually.  First, you need to clone this top-level project:
