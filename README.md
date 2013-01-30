@@ -5,21 +5,21 @@ This is the top-level project for Cytoscape 3.  If you want to build the entire 
 
 
 # Cytoscape 3 Project Structure
-Cytoscape 3 currently consists of the following sub-projects:
+Cytoscape 3 currently consists of the following subprojects:
 
-* API
-* Impl
-* Support
-* GUI-Distribution
-* Headless-Distribution
-* APP-Developer
-* Samples
+* api
+* impl
+* support
+* gui-distribution
+* headless-distribution
+* app-developer
+* samples
 
-If you just want to build the Desktop version of Cytoscape 3, you just need to clone and build *GUI-Distribution* subproject.
+If you just want to build the Desktop version of Cytoscape 3, you just need to clone and build *gui-distribution* subproject.
 
 # How to build Cytoscape 3
 
-## Requirments
+## Requirements
 
 You need the following software packages to build Cytoscape 3:
 
@@ -35,14 +35,14 @@ If you are a core developer, you also need:
   * Cytoscape 3 Core Projects are managed by following this branching rule:
     * [A successful Git branching model](http://nvie.com/posts/a-successful-git-branching-model/)
 
-If you want to clone all sub-projects at once, you also need:
+If you want to clone all subprojects at once, you also need:
 
-* [Repo](http://code.google.com/p/git-repo/) - Collection of Python scripts to manage multiple git repositoris.
-
-
+* [Repo](http://code.google.com/p/git-repo/) - Collection of Python scripts to manage multiple git repositories.
 
 
-## Clone Cytoscape 3 Sub-Projects
+
+
+## Clone Cytoscape 3 Subprojects
 
 There are two ways to clone Cytoscape projects:
 
@@ -58,7 +58,7 @@ repo init -u git@github.com:cytoscape/cytoscape.git
 repo sync
 ```
 
-At this point, your Then, you need to create local branches
+At this point, you need to create local branches
 
 ```
 repo start master api impl gui-distribution support parent headless-distribution
@@ -72,12 +72,12 @@ repo checkout develop
 ```
 
 #### For Core Developer
-Before start development, you need to initialize your repo with git flow:
+Before start development, you need to initialize your repo with git-flow:
 
-For each sun-project, run the following command:
+For each sub-project, run the following command:
 
 ```
-git flow init -d
+git-flow init -d
 ```
 
 You need write permission to push your code.  The following is for impl bundle:
@@ -86,11 +86,11 @@ You need write permission to push your code.  The following is for impl bundle:
 git remote set-url origin git@github.com:cytoscape/cytoscape-impl.git
 ```
 
-Now you can push your changes to the upstream.
+Now you can push your changes upstream.
 
 
 ### Clone with git commands
-Of course, you can clone Cytoscape 3 subprojects manually.  First, you need to clone this top-level project to 
+Of course, you can clone Cytoscape 3 subprojects manually.  First, you need to clone this top-level project:
 
 ```
 git clone git://github.com/cytoscape/cytoscape.git
