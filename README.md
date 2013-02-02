@@ -85,6 +85,7 @@ For each sub-project, run the following command:
 
 ```
 git-flow init -d
+git pull origin develop
 ```
 
 ### Clone with git commands
