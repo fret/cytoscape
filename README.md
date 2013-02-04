@@ -68,8 +68,8 @@ repo sync
 At this point, you need to create local branches
 
 ```
-repo start master api impl gui-distribution support parent headless-distribution
-repo start develop api impl gui-distribution support parent headless-distribution
+repo start master api impl app-developer gui-distribution samples support parent headless-distribution
+repo start develop api impl app-developer gui-distribution samples support parent headless-distribution
 ```
 
 Finally, switch to the develop branch:
