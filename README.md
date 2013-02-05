@@ -56,8 +56,9 @@ repo init -u git@github.com:cytoscape/cytoscape.git
 ```
 
 Core developers can initialize writable clone instead using this command:
+
 ```
-repo init -u git@github.com:cytoscape/cytoscape.git -m dev.xml
+repo init -u git@github.com:cytoscape/cytoscape.git -m dev.xml -b develop
 ```
 
 Finally, use the following to actually clone the repositories:
@@ -68,8 +69,7 @@ repo sync
 At this point, you need to create local branches
 
 ```
-repo start master api impl app-developer gui-distribution samples support parent headless-distribution
-repo start develop api impl app-developer gui-distribution samples support parent headless-distribution
+repo start develop --all 
 ```
 
 Finally, switch to the develop branch:
