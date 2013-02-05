@@ -84,8 +84,9 @@ Before start development, you need to initialize your repo with git-flow:
 For each sub-project, run the following command:
 
 ```
+git checkout master
 git-flow init -d
-git pull origin develop
+git checkout develop
 ```
 
 ### Clone with git commands
