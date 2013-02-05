@@ -52,7 +52,7 @@ There are two ways to clone Cytoscape projects:
 You need to install repo before you run the following commands.  To initialize a read-only clone of the projects use:
 
 ```
-repo init -u git@github.com:cytoscape/cytoscape.git
+repo init -u git@github.com:cytoscape/cytoscape.git -b develop
 ```
 
 Core developers can initialize writable clone instead using this command:
