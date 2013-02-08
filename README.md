@@ -7,6 +7,7 @@ This is the top-level project for Cytoscape 3.  If you want to build the entire 
 # Cytoscape 3 Project Structure
 Cytoscape 3 currently consists of the following subprojects:
 
+* Parent
 * api
 * impl
 * support
